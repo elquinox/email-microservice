@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>se.iths.ellinor</groupId>
-    <artifactId>email-microservice</artifactId>
+    <artifactId>email-microservice-local</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>email-microservice</name>
     <description>email-microservice</description>
@@ -64,12 +64,18 @@
         <dependency>
             <groupId>se.iths.johan</groupId>
             <artifactId>spring-messenger</artifactId>
-            <version>1.0.2-SNAPSHOT</version>
+            <version>1.0.4</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
